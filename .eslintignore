@@ -8,5 +8,4 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# dotenv environment variables file
-.env
+package-lock.json
