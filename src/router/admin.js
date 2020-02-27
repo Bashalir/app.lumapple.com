@@ -65,7 +65,7 @@ function AddProductForm() {
             key={index}
             label={label}
             type={type}
-            value={values[key]}
+            placeholder={values[key]}
             name={key}
             onChange={handleChange}
           />

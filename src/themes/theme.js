@@ -10,6 +10,10 @@ export const mainTheme = {
     backgroundColor: '#F7F7F7',
   },
 
+  fonts: {
+    fontPrimary: 'Nunito',
+  },
+
   //   shadows : {
   //     pressedShadow:{css`
   //     border-radius: 50px;

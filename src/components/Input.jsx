@@ -5,8 +5,10 @@ import styled from 'styled-components'; //css
 const StyledInput = styled.div`
   padding: 10px;
   background-color: ${({ theme }) => theme.colors.backgroundColor};
-
+  font-family: ${({ theme }) => theme.fonts.fontPrimary};
+  font-weight: 400;
   label {
+    font-weight: 700;
     width: 10rem;
     display: inline-block;
   }
@@ -35,7 +37,7 @@ export default function Input({
         {label} :
         <input
           type={type}
-          value={value}
+          placeholder={value}
           name={name}
           onChange={onChange}
           {...otherProps}
