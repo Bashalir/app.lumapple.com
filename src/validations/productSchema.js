@@ -7,7 +7,11 @@ const productSchema = yup.object().shape({
     .max(50)
     .required(),
   introductionDate: yup.date().required(),
-  model: yup.string().email('fuck'),
+  model: yup
+    .string()
+    .min(5, 'more character')
+    .max(50)
+    .required(),
   idModel: yup
     .string()
     .min(5)
@@ -40,14 +44,8 @@ const productSchema = yup.object().shape({
     .required(),
 });
 
-const testSchema = yup.object().shape({
-  email: yup.string().email('fuck'),
-  email2: yup.string().email('You'),
-});
-
 module.exports = {
   productSchema,
-  testSchema,
 };
 
 // { label: 'Description', key: 'description', type: 'text' },

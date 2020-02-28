@@ -18,8 +18,13 @@ const StyledInput = styled.div`
     padding: 5px;
     border: 0px;
     border-radius: 50px;
-    background: ${({ theme }) => theme.colors.backgroundColor};
+
+    background: ${({ theme, isError }) =>
+      isError ? 'red' : theme.colors.backgroundColor};
     box-shadow: inset 4px 4px 8px #d2d2d2, inset -4px -4px 8px #ffffff;
+  }
+  .errorInput {
+    background-color: blue;
   }
 `;
 
@@ -30,20 +35,18 @@ export default function Input({
   name,
   refHookForm,
   err,
-
-  //onChange,
   ...otherProps
 }) {
   return (
-    <StyledInput>
+    <StyledInput isError={err[name]}>
       <label>
         {label} :
         <input
+          className={err[name] && 'errorInput'}
           type={type}
           placeholder={value}
           name={name}
           ref={refHookForm}
-          //onChange={onChange}
           {...otherProps}
         />
       </label>
@@ -60,5 +63,4 @@ Input.propTypes = {
     PropTypes.number.isRequired,
   ]),
   name: PropTypes.string.isRequired,
-  // onChange: PropTypes.func.isRequired,
 };
