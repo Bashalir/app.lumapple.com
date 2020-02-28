@@ -28,7 +28,10 @@ export default function Input({
   type,
   value,
   name,
-  onChange,
+  refHookForm,
+  err,
+
+  //onChange,
   ...otherProps
 }) {
   return (
@@ -39,10 +42,12 @@ export default function Input({
           type={type}
           placeholder={value}
           name={name}
-          onChange={onChange}
+          ref={refHookForm}
+          //onChange={onChange}
           {...otherProps}
         />
       </label>
+      {err[name] && err[name].message}
     </StyledInput>
   );
 }
@@ -55,5 +60,5 @@ Input.propTypes = {
     PropTypes.number.isRequired,
   ]),
   name: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  // onChange: PropTypes.func.isRequired,
 };
