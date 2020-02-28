@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // Link
 import Admin from './admin';
+import Home from './home';
 
 export default function AppRouter() {
   return (
@@ -19,6 +20,4 @@ export default function AppRouter() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
+
