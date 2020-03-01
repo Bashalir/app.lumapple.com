@@ -3,7 +3,7 @@ import styled from 'styled-components'; //css
 const StyledInput = styled.div`
   padding: 10px;
   background-color: ${({ theme }) => theme.colors.backgroundColor};
-  font-family: ${({ theme }) => theme.fonts.fontPrimary};
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-weight: 400;
   label {
     font-weight: 700;

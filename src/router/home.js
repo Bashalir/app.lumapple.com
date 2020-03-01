@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
+import Main from '../components/Main';
 
 import styled from 'styled-components'; //css
 
 const StyledHome = styled.div`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: block;
+  background-color: ${({ theme }) => theme.colors.backgroundPrimaryColor};
 `;
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
     <>
       <StyledHome>
         <Header />
+        <Main />
       </StyledHome>
     </>
   );

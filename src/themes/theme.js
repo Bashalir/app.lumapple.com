@@ -7,11 +7,12 @@ export const mainTheme = {
     neutralLight: '#B0B0B2',
     neutralLighter: '#F7F7F7',
     neutralLightest: '#FFF',
-    backgroundColor: '#F7F7F7',
+    backgroundPrimaryColor: '#F7F7F7',
+    backgroundSecondaryColor: '#00C853',
   },
 
   fonts: {
-    fontPrimary: 'Nunito',
+    primary: 'Nunito',
   },
 
   //   shadows : {
