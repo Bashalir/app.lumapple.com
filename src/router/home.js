@@ -6,7 +6,7 @@ import styled from 'styled-components'; //css
 
 const StyledHome = styled.div`
   display: block;
-  background-color: ${({ theme }) => theme.colors.backgroundPrimaryColor};
+  background-color: ${({ theme }) => theme.colors.backgroundPrimary};
 `;
 
 function Home() {

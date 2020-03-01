@@ -14,9 +14,9 @@ border:0px;
 border-radius: 19px;
 font-family: ${({ theme }) => theme.fonts.primary};
 font-weight:800;
-background: ${({ theme }) => theme.colors.backgroundSecondaryColor};
-box-shadow:  4px 4px 7px #00ba4d,
-             -4px -4px 7px #00d659;
+background: ${({ theme }) => theme.colors.backgroundSecondary};
+box-shadow:  4px 4px 7px ${({ theme }) => theme.colors.shadowDarker},
+             -4px -4px 7px ${({ theme }) => theme.colors.shadowLight};
   color:${({ theme }) => theme.colors.neutralLighter};
 padding:5px 0;
 

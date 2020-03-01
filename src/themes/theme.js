@@ -7,8 +7,10 @@ export const mainTheme = {
     neutralLight: '#B0B0B2',
     neutralLighter: '#F7F7F7',
     neutralLightest: '#FFF',
-    backgroundPrimaryColor: '#F7F7F7',
-    backgroundSecondaryColor: '#00C853',
+    backgroundPrimary: '#F7F7F7',
+    backgroundSecondary: '#00C853',
+    shadowLight:'#00d659',
+    shadowDarker:'#00ba4d',
   },
 
   fonts: {
