@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const StyledCategoryCard = styled.div`
 text-align:center;
 color:${({ theme }) => theme.colors.neutral};
+
 figure {
   display:flex;
   justify-content:center;
@@ -25,7 +24,7 @@ img{
   height:50px;
 
 }
-span {
+label {
 padding-top:10px;
 font-family: ${({ theme }) => theme.fonts.primary};
 }
@@ -38,7 +37,7 @@ export default function CategoryCard(props) {
       <figure>
         <img src={props.img}/>
         </figure>
-        <span>{props.name}</span>
+        <label>{props.name}</label>
 
     </StyledCategoryCard>
   );

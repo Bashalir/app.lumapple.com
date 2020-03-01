@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Logo from './logoLumapple.svg';
 import SearchBar from './SearchBar';
+import ButtonAdd from './ButtonAdd';
 
 
 
@@ -19,13 +20,16 @@ display:block;
 
   }
 
-  img {
+  .logo {
     vertical-align: middle;
     height: 37px;
     padding: 0 1vw 0 1vw;
   }
 
   .create-posting {
+    display:flex;
+    justify-content:center;
+align-items:center;
     order:2;
     padding: 0 1vw 0 1vw;
   }
@@ -45,11 +49,11 @@ export default function NavBar() {
   return (
     <StyledNavBar>
       <nav>
-        <div className="logo">
-          <img src={Logo} />
+        <div >
+          <img className="logo" src={Logo} />
         </div>
         <div className="create-posting">
-        <button>Déposer une annonce</button>
+        <ButtonAdd name="Déposer une annonce"/>
         </div>
         <div className="search-bar">
         <SearchBar />

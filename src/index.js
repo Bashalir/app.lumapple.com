@@ -5,8 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ThemeProvider from './themes/ThemeProvider';
 
+
 ReactDOM.render(
   <ThemeProvider>
+
     <App />
   </ThemeProvider>,
   document.getElementById('root'),

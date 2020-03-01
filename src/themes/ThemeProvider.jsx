@@ -3,8 +3,9 @@ import { mainTheme } from './theme';
 import React from 'react';
 
 createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap');
-font-family: 'Nunito';
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap');
+font-family: ${({ theme }) => theme.fonts.primary};
+
 `;
 
 export default function GlobalThemeProvider({ children }) {
