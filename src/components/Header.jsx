@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import NavBar from './NavBar';
 
 const StyledHeader = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: ${({ theme }) => theme.colors.primary};
 `;
