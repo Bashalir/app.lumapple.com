@@ -1,14 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import StyledInput from './StyledInput';
+
+const StyledSearchBar = styled.div`
+input {
+  width:100%;
+}
+
+`;
+
 
 export default function SearchBar() {
   return (
-    <StyledInput>
-      <label>
+
+
+<StyledSearchBar>
+
         <input />
-      </label>
-    </StyledInput>
+
+      </StyledSearchBar>
+
+
   );
 }
