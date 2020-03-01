@@ -11,7 +11,11 @@ export const mainTheme = {
     backgroundSecondary: '#00C853',
     shadowLight:'#00d659',
     shadowDarker:'#00ba4d',
+    gradientSecondary: 'linear-gradient(145deg, #00d659, #00b44b)'
+    
   },
+
+
 
   fonts: {
     primary: 'Nunito',

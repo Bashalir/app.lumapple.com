@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Logo from './logoLumapple.svg';
 import SearchBar from './SearchBar';
-import ButtonAdd from './ButtonAdd';
+import ButtonAdd from './ButtonAdd/ButtonAdd';
 
 
 

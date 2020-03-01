@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Add from './add.svg';
-
-
+import Add from './assets/add.svg';
+import AddActive from './assets/add-active.svg';
 
 const StyledButton = styled.button`
 display:flex;
@@ -20,14 +19,34 @@ box-shadow:  4px 4px 7px ${({ theme }) => theme.colors.shadowDarker},
   color:${({ theme }) => theme.colors.neutralLighter};
 padding:5px 0;
 
+:hover {
+  box-shadow: inset 4px 4px 11px ${({ theme }) => theme.colors.primaryDark},
+            inset -4px -4px 11px ${({ theme }) => theme.colors.shadowLight};
+
+
+}
+:active{
+  color:${({ theme }) => theme.colors.primaryDark};
   .logo-add {
-padding: 0 5px 0 10px;
+    background-image: url('${AddActive}');
+  }
+}
+
+
+  .logo-add {
+    background-image: url('${Add}');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position:center;
+
     width:25px;
     height:25px;
+    padding: 0 5px 0 15px;
+    z-index:1;
   }
   .span-add{
 
-    padding: 0 10px 0 5px;
+    padding: 0 15px 0 0px;
 
     text-align:center;
   }
@@ -37,7 +56,7 @@ export default function ButtonAdd(props) {
   return (
 
     <StyledButton>
-<img className='logo-add'src={Add}/>
+<div className='logo-add'/>
 <span className='span-add'>{props.name}</span>
     </StyledButton>
 
