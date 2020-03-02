@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // Li
 import Admin from './admin';
 import Home from './home';
 import Main from '../components/Main';
-import AddPosting from './add-posting';
+import SellNow from './sell-now';
 import RouteWithSubRoutes from './utils';
 
 const routes = [
@@ -16,8 +16,8 @@ const routes = [
     component: Home,
     routes: [
       {
-        path: "/deposer-une-annonce",
-        component: AddPosting
+        path: "/vendez-maintenant",
+        component: SellNow
       }
     ]
   }

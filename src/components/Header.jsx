@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavBar from './NavBar';
+import NavBar from './NavBar/NavBar';
 
 const StyledHeader = styled.div`
   width: 100vw;

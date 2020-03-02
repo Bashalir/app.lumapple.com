@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
-
-
 import styled from 'styled-components'; //css
+import SelectCategory from '../components/SelectCategory/SelectCategory';
 
-const StyledAddPosting = styled.div`
+const StyledSellNow = styled.div`
   display: block;
   background-color: ${({ theme }) => theme.colors.backgroundPrimary};
 `;
 
-function AddPosting() {
+function SellNow() {
   return (
     <>
-      <StyledAddPosting>
-<div>Déposer une annonce</div>
-      </StyledAddPosting>
+      <StyledSellNow>
+<SelectCategory />
+      </StyledSellNow>
     </>
   );
 }
 
-export default AddPosting;
+export default SellNow;

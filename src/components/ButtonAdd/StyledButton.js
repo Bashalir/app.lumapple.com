@@ -47,7 +47,7 @@ padding:5px 0;
   .span-add{
 
     padding: 0 15px 0 0px;
-
+    font-size:1.2em;
     text-align:center;
   }
 

@@ -4,6 +4,7 @@ export const mainTheme = {
     primaryDark: '#009624',
     neutralDarker: '#18181E',
     neutral: '#717172',
+    neurtalGrey:'#d2d2d2',
     neutralLight: '#B0B0B2',
     neutralLighter: '#F7F7F7',
     neutralLightest: '#FFF',
@@ -12,7 +13,7 @@ export const mainTheme = {
     shadowLight:'#00d659',
     shadowDarker:'#00ba4d',
     gradientSecondary: 'linear-gradient(145deg, #00d659, #00b44b)'
-    
+
   },
 
 
@@ -20,6 +21,12 @@ export const mainTheme = {
   fonts: {
     primary: 'Nunito',
   },
+
+  fontsSize: {
+    header2: '1.3rem',
+    header3: '1.1rem'
+  },
+
 
   //   shadows : {
   //     pressedShadow:{css`
