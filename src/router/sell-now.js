@@ -12,7 +12,7 @@ function SellNow() {
   return (
     <>
       <StyledSellNow>
-<SelectCategory />
+        <SelectCategory />
       </StyledSellNow>
     </>
   );

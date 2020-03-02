@@ -8,22 +8,20 @@ import RouteWithSubRoutes from './utils';
 
 const routes = [
   {
-    path: "/admin2",
-    component: Admin
+    path: '/admin',
+    component: Admin,
   },
   {
-    path: "/",
+    path: '/',
     component: Home,
     routes: [
       {
-        path: "/vendez-maintenant",
-        component: SellNow
-      }
-    ]
-  }
+        path: '/vendez-maintenant',
+        component: SellNow,
+      },
+    ],
+  },
 ];
-
-
 
 export default function AppRouter() {
   return (
@@ -31,12 +29,10 @@ export default function AppRouter() {
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       <Switch>
-      {routes.map((route, i) => (
+        {routes.map((route, i) => (
           <RouteWithSubRoutes key={i} {...route} />
         ))}
       </Switch>
     </Router>
   );
 }
-
-
