@@ -5,6 +5,7 @@ import ButtonAdd from '../ButtonAdd/ButtonAdd';
 import StyledNavBar from './assets/StyledNavBar';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import StyledSign from '../Sign/style';
 
 export default function NavBar() {
   let history = useHistory();
@@ -26,21 +27,19 @@ export default function NavBar() {
           />
         </div>
 
-        <div
-          className="sell-now"
-          onClick={() => {
-            handleClick('/vendez-maintenant');
-          }}
-        >
-          <ButtonAdd name="Vendez maintenant" />
+        <div className="sell-now">
+          <Link
+            to="/vendez-maintenant"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <ButtonAdd name="Vendez maintenant" />
+          </Link>
         </div>
 
         <div className="search-bar">
           <SearchBar />
         </div>
-        <div className="account">
-          <button>Se connecter</button>
-        </div>
+        <StyledSign />
       </nav>
     </StyledNavBar>
   );

@@ -16,7 +16,7 @@ font-weight:800;
 background: ${({ theme }) => theme.colors.backgroundSecondary};
 box-shadow:  4px 4px 7px ${({ theme }) => theme.colors.shadowDarker},
              -4px -4px 7px ${({ theme }) => theme.colors.shadowLight};
-  color:${({ theme }) => theme.colors.neutralLighter};
+color:${({ theme }) => theme.colors.neutralLighter};
 padding:5px 0;
 position:relative;
 outline: 0;
@@ -30,10 +30,10 @@ outline: 0;
   opacity:0;
   border-radius: 19px;
   box-shadow: inset 4px 4px 11px ${({ theme }) => theme.colors.primaryDark},
-            inset -4px -4px 11px ${({ theme }) => theme.colors.shadowLight};
+              inset -4px -4px 11px ${({ theme }) => theme.colors.shadowLight};
   transition: opacity 250ms;
 }
-:hover {
+:hover  {
             ::after {
               opacity:1;
             }
@@ -49,7 +49,6 @@ outline: 0;
     ::after {opacity:1;}
   }
 }
-
 
   .logo-add {
     background-image: url('${Add}');
@@ -85,7 +84,7 @@ outline: 0;
     font-size:1.2em;
     text-align:center;
     position:relative;
-z-index:1;
+    z-index:1;
 
     ::after{
 
