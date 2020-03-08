@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // Link
 import Admin from './admin';
 import Home from './home';
+import MyAccount from '../components/MyAccount/index'
 import Main from '../components/Main';
 import SellNow from './sell-now';
 import RouteWithSubRoutes from './utils';
@@ -18,6 +19,10 @@ const routes = [
       {
         path: '/vendez-maintenant',
         component: SellNow,
+      },
+      {
+        path: '/mon-compte',
+        component: MyAccount,
       },
     ],
   },

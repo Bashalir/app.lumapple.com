@@ -14,7 +14,6 @@ const StyledHome = styled.div`
 
 function Home({ routes }) {
   return (
-    <>
       <StyledHome>
         <Header />
         <Switch>
@@ -26,7 +25,6 @@ function Home({ routes }) {
           ))}
         </Switch>
       </StyledHome>
-    </>
   );
 }
 

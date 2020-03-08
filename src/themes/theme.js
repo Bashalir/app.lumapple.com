@@ -20,6 +20,7 @@ export const mainTheme = {
   },
 
   fontsSize: {
+    primary:'1rem',
     header2: '1.3rem',
     header3: '1.1rem',
   },

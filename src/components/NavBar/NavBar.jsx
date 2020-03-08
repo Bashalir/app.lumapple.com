@@ -5,7 +5,7 @@ import ButtonAdd from '../ButtonAdd/ButtonAdd';
 import StyledNavBar from './assets/StyledNavBar';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import StyledSign from '../Sign/style';
+import Sign from '../Sign/index';
 
 export default function NavBar() {
   let history = useHistory();
@@ -16,10 +16,9 @@ export default function NavBar() {
 
   return (
     <StyledNavBar>
-      <nav>
-        <div>
+      <section>
+        <div className="logo">
           <img
-            className="logo"
             src={Logo}
             onClick={() => {
               handleClick('/');
@@ -30,7 +29,6 @@ export default function NavBar() {
         <div className="sell-now">
           <Link
             to="/vendez-maintenant"
-            style={{ textDecoration: 'none', color: 'inherit' }}
           >
             <ButtonAdd name="Vendez maintenant" />
           </Link>
@@ -39,8 +37,10 @@ export default function NavBar() {
         <div className="search-bar">
           <SearchBar />
         </div>
-        <StyledSign />
-      </nav>
+        <div className="account">
+        <Sign />
+        </div>
+        </section>
     </StyledNavBar>
   );
 }

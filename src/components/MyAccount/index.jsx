@@ -4,29 +4,24 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../../config/firebaseConfig';
 import StyledSign from './style';
-import UserLogo from './assets/user.svg';
 import { useHistory } from 'react-router-dom';
 
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
+const firebaseAppAuth = firebaseApp.auth();
 
-function Sign() {
+const providers = {
+  googleProvider: new firebase.auth.GoogleAuthProvider(),
+};
 
-  let history = useHistory();
+function MyAccount({ user, signOut, signInWithGoogle }) {
 
-  function handleClick(link) {
-    history.push(link);
-  }
 
   return (
 
-<StyledSign>
-<div onClick={()=>{ handleClick('/mon-compte')}}><img src={UserLogo} />
-<span>Se connecter</span>
+<section>
 
-{/* {user ? <span>{user.displayName}</span> : <span>Se connecter</span>} */}
-
-</div>
-{/*       {user ? <p>Salut, {user.displayName}</p> : <p>Login stp</p>}
+      {user ? <p>Salut, {user.displayName}</p> : <p>Login stp</p>}
 
       {user ? (
         <>
@@ -34,11 +29,14 @@ function Sign() {
         </>
       ) : (
         <button onClick={signInWithGoogle}>Se login avec Google</button>
-      )} */}
- </StyledSign>
+      )}
 
+</section>
 
   );
 }
 
-export default Sign;
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(MyAccount);

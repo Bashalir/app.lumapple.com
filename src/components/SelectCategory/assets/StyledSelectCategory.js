@@ -10,10 +10,12 @@ margin: 0 auto;
     h2 {
       font-size:${({ theme }) => theme.fontsSize.header2};
       margin-left:1vw;
+      padding:1vw;
     }
     h3 {
       font-size:${({ theme }) => theme.fontsSize.header3};
       font-weight:600;
+      padding:0.5vw;
     }
     .title-category{
       margin-left:1vw;
@@ -34,7 +36,7 @@ box-shadow:  7px 7px 14px ${({ theme }) => theme.colors.neurtalGrey},
       display:flex;
   justify-content:space-around;
   align-items:center;
-  padding-bottom:1vw;
+  padding:1vw 0 1vw 0;
     }
 
 `;
