@@ -1,14 +1,13 @@
 import React from 'react';
-import StyledButton from './StyledButton';
-
+import StyledButtonAdd from './assets/style/StyledButtonAdd';
+import StyledTitle from './assets/style/StyledTitle';
+import StyledPlus from './assets/style/StyledPlus';
 
 export default function ButtonAdd(props) {
   return (
-
-    <StyledButton>
-<div className='logo-add'/>
-<span className='span-add'>{props.name}</span>
-    </StyledButton>
-
+    <StyledButtonAdd>
+      <StyledPlus className="logo-add" />
+      <StyledTitle name={props.name}>{props.name}</StyledTitle>
+    </StyledButtonAdd>
   );
 }
