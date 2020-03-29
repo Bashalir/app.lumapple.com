@@ -1,5 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Mac from './assets/mac.svg';
+import Ipad from './assets/ipad.svg';
+import Iphone from './assets/iphone.svg';
+import MacBook from './assets/macbook.svg';
+import Watch from './assets/watch.svg';
 
 const StyledCategoryCard = styled.div`
   text-align: center;
@@ -31,7 +36,7 @@ export default function CategoryCard(props) {
   return (
     <StyledCategoryCard>
       <figure>
-        <img src={props.img} />
+        <img />
       </figure>
       <label>{props.name}</label>
     </StyledCategoryCard>

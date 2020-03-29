@@ -26,21 +26,22 @@ export default function NavBar() {
           />
         </div>
 
-        <div className="sell-now">
-          <Link
-            to="/vendez-maintenant"
-          >
-            <ButtonAdd name="Vendez maintenant" />
-          </Link>
+        <div
+          className="sell-now"
+          onClick={() => {
+            handleClick('/vendez-maintenant');
+          }}
+        >
+          <ButtonAdd name="Vendez maintenant" />
         </div>
 
         <div className="search-bar">
           <SearchBar />
         </div>
         <div className="account">
-        <Sign />
+          <Sign />
         </div>
-        </section>
+      </section>
     </StyledNavBar>
   );
 }
