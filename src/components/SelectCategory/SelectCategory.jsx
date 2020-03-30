@@ -1,11 +1,6 @@
 import React from 'react';
 import StyledSelectCategory from './assets/StyledSelectCategory';
-import CategoryCard from '../CategoryCard/CategoryCard.jsx';
-import Mac from '../CategoryCard/assets/mac.svg';
-import Ipad from '../CategoryCard/assets/ipad.svg';
-import Iphone from '../CategoryCard/assets/iphone.svg';
-import MacBook from '../CategoryCard/assets/macbook.svg';
-import Watch from '../CategoryCard/assets/watch.svg';
+import CategoryCard from '../CategoryCard/index.jsx';
 
 export default function SelectCategory() {
   return (
@@ -16,12 +11,12 @@ export default function SelectCategory() {
           Choisissez la famille du produit
         </h3>
         <div className="select-category">
-          <CategoryCard name="Mac" img={Mac} />
-          <CategoryCard name="iMac" img={Mac} />
-          <CategoryCard name="Mac Book" img={MacBook} />
-          <CategoryCard name="iPad" img={Ipad} />
-          <CategoryCard name="iPhone" img={Iphone} />
-          <CategoryCard name="Watch" img={Watch} />
+          <CategoryCard name="Mac" />
+          <CategoryCard name="Mac" />
+          <CategoryCard name="MacBook" />
+          <CategoryCard name="iPad" />
+          <CategoryCard name="iPhone" />
+          <CategoryCard name="Watch" />
         </div>
       </div>
     </StyledSelectCategory>

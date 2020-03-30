@@ -9,7 +9,7 @@ addDecorator((storyFn) => (
 
 addParameters({
   backgrounds: [
-    { name: 'Primary', value: 'F7F7F7', default: true },
+    { name: 'Primary', value: '#F7F7F7', default: true },
     { name: 'Secondary', value: '#00C853' },
   ],
 });

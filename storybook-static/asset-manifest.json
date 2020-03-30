@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/main.28ae0b99f784644d7b9c.bundle.js",
-    "main.js.map": "/main.28ae0b99f784644d7b9c.bundle.js.map",
-    "runtime~main.js": "/runtime~main.28ae0b99f784644d7b9c.bundle.js",
-    "runtime~main.js.map": "/runtime~main.28ae0b99f784644d7b9c.bundle.js.map",
-    "vendors~main.js": "/vendors~main.28ae0b99f784644d7b9c.bundle.js",
-    "vendors~main.js.map": "/vendors~main.28ae0b99f784644d7b9c.bundle.js.map",
+    "main.js": "/main.1b850b54e6074148e776.bundle.js",
+    "main.js.map": "/main.1b850b54e6074148e776.bundle.js.map",
+    "runtime~main.js": "/runtime~main.1b850b54e6074148e776.bundle.js",
+    "runtime~main.js.map": "/runtime~main.1b850b54e6074148e776.bundle.js.map",
+    "vendors~main.js": "/vendors~main.1b850b54e6074148e776.bundle.js",
+    "vendors~main.js.map": "/vendors~main.1b850b54e6074148e776.bundle.js.map",
     "iframe.html": "/iframe.html",
-    "precache-manifest.25ea62591515bac0dc15411a56e77d7d.js": "/precache-manifest.25ea62591515bac0dc15411a56e77d7d.js",
+    "precache-manifest.f536f2ce31d2c670ea48aa11f1be0d08.js": "/precache-manifest.f536f2ce31d2c670ea48aa11f1be0d08.js",
     "service-worker.js": "/service-worker.js",
     "static/media/add-active.svg": "/static/media/add-active.97a71885.svg",
     "static/media/add.svg": "/static/media/add.8695bfae.svg",
@@ -15,12 +15,13 @@
     "static/media/iphone.svg": "/static/media/iphone.a27d7ade.svg",
     "static/media/mac.svg": "/static/media/mac.7314dc9a.svg",
     "static/media/macbook.svg": "/static/media/macbook.f6b3d91e.svg",
+    "static/media/style.css": "/static/media/style.5ae4a044.css",
     "static/media/watch.svg": "/static/media/watch.0d1e4faf.svg",
-    "vendors~main.28ae0b99f784644d7b9c.bundle.js.LICENSE.txt": "/vendors~main.28ae0b99f784644d7b9c.bundle.js.LICENSE.txt"
+    "vendors~main.1b850b54e6074148e776.bundle.js.LICENSE.txt": "/vendors~main.1b850b54e6074148e776.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
-    "runtime~main.28ae0b99f784644d7b9c.bundle.js",
-    "vendors~main.28ae0b99f784644d7b9c.bundle.js",
-    "main.28ae0b99f784644d7b9c.bundle.js"
+    "runtime~main.1b850b54e6074148e776.bundle.js",
+    "vendors~main.1b850b54e6074148e776.bundle.js",
+    "main.1b850b54e6074148e776.bundle.js"
   ]
 }

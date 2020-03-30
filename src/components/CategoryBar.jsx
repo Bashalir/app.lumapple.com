@@ -1,11 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CategoryCard from './CategoryCard/CategoryCard.jsx';
-import Mac from './CategoryCard/assets/mac.svg';
-import Ipad from './CategoryCard/assets/ipad.svg';
-import Iphone from './CategoryCard/assets/iphone.svg';
-import MacBook from './CategoryCard/assets/macbook.svg';
-import Watch from './CategoryCard/assets/watch.svg';
+import CategoryCard from './CategoryCard/index.jsx';
 
 const StyledCategoryBar = styled.div`
   .category-bar {

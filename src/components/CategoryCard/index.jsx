@@ -1,39 +1,39 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const StyledCategoryCard = styled.div`
-  text-align: center;
-  color: ${({ theme }) => theme.colors.neutral};
+import StyledCategoryCard from './style/StyledCategoryCard';
+import StyledFigure from './style/StyledFigure';
+import StyledName from './style/StyledName';
 
-  figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
-    margin: 0 0 5px 0;
-    border-radius: 19px;
-    background: #f7f7f7;
-    box-shadow: 7px 7px 14px #e8e8e8, -7px -7px 14px #ffffff;
-    background-color: ${({ theme }) => theme.colors.backgroundPrimaryColor};
+import Mac from './img/mac.svg';
+import Ipad from './img/ipad.svg';
+import Iphone from './img/iphone.svg';
+import MacBook from './img/macbook.svg';
+import Watch from './img/watch.svg';
+
+const Img = (props) => {
+  switch (props.name) {
+    case 'Mac':
+      return <img src={Mac} name={props.name} alt={props.name} />;
+    case 'iPad':
+      return <img src={Ipad} name={props.name} alt={props.name} />;
+    case 'iPhone':
+      return <img src={Iphone} name={props.name} alt={props.name} />;
+    case 'MacBook':
+      return <img src={MacBook} name={props.name} alt={props.name} />;
+    case 'Watch':
+      return <img src={Watch} name={props.name} alt={props.name} />;
+    default:
+      return <div />;
   }
-  img {
-    width: 50px;
-    height: 50px;
-  }
-  label {
-    padding-top: 10px;
-    font-family: ${({ theme }) => theme.fonts.primary};
-  }
-`;
+};
 
 export default function CategoryCard(props) {
   return (
     <StyledCategoryCard>
-      <figure>
-        <img src={props.img} />
-      </figure>
-      <label>{props.name}</label>
+      <StyledFigure>
+        <Img name={props.name} />
+      </StyledFigure>
+      <StyledName name={props.name}>{props.name}</StyledName>
     </StyledCategoryCard>
   );
 }

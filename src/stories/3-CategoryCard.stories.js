@@ -1,18 +1,19 @@
 import React from 'react';
+
 //import { action } from '@storybook/addon-actions';
-import Mac from '../components/CategoryCard/assets/mac.svg';
-import {
-  StyledCategoryCardMac,
-  CategoryCard,
-} from '../components/CategoryCard/CategoryCard.jsx';
+import CategoryCard from '../components/CategoryCard/index.jsx';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 
 export default {
-  title: 'StyledCategoryCardMac',
-  component: StyledCategoryCardMac,
+  title: 'CategoryCard',
+  component: CategoryCard,
+  decorators: [withKnobs],
 };
 
-// export const CategoryCardMac = () => <CategoryCard name="Mac" img="../components/CategoryCard/assets/mac.svg" />;
+const label = 'Category';
+const options = ['Mac', 'MacBook', 'iPad', 'iPhone', 'Watch'];
+const defaultValue = 'Mac';
 
 export const CategoryCardMac = () => (
-  <StyledCategoryCardMac name="Mac" img={Mac} />
+  <CategoryCard name={select(label, options, defaultValue)} />
 );

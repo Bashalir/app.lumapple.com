@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './assets/logoLumapple.svg';
 import SearchBar from '../SearchBar';
-import ButtonAdd from '../ButtonAdd/ButtonAdd';
+import AddButton from '../AddButton/index';
 import StyledNavBar from './assets/StyledNavBar';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -32,7 +32,7 @@ export default function NavBar() {
             handleClick('/vendez-maintenant');
           }}
         >
-          <ButtonAdd name="Vendez maintenant" />
+          <AddButton name="Vendez maintenant" />
         </div>
 
         <div className="search-bar">

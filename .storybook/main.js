@@ -8,5 +8,6 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-docs',
     '@storybook/addon-backgrounds',
+    
   ],
 };
