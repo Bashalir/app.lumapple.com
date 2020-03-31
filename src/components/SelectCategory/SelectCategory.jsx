@@ -1,6 +1,7 @@
 import React from 'react';
 import StyledSelectCategory from './assets/StyledSelectCategory';
 import CategoryCard from '../CategoryCard/index.jsx';
+import Card from '../Card.jsx';
 
 export default function SelectCategory() {
   return (
