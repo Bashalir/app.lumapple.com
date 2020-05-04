@@ -9,7 +9,7 @@ const StyledModelCard = styled.div`
   align-items: center;
 
   img {
-    animation: photo-position--out 250ms;
+    animation: photo-position--out 250ms ease-in;
     object-position: 100% 25px;
   }
   label {
@@ -36,7 +36,7 @@ const StyledModelCard = styled.div`
   }
   :hover {
     img {
-      animation: photo-position--in 250ms;
+      animation: photo-position--in 250ms ease-in;
       object-position: 100% 10px;
       /* transform: translateY(-20px); */
     }
